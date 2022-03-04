@@ -4,3 +4,26 @@ body,
     height: 100%;
     margin: 0;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 700px;
+    height: 300px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #daa520;
+}
+
+div:nth-child(even) {
+    transform: translateY(100%);
+}
+
+div:nth-child(3) {
+    transform: translateY(200%);
+}
